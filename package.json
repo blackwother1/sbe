@@ -1,13 +1,14 @@
 {
   "name": "sbe",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "npx vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "npx vite preview"
+    "postinstall": "node -e \"try{require('fs').chmodSync('node_modules/.bin/vite',0o755);}catch(e){}\""
   },
   "dependencies": {
     "react": "^19.1.0",

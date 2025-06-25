@@ -1,3 +1,3 @@
 export default function Tools() {
-  return <div>Her er verktøyene dine.</div>;
+  return <div>Her er verktøyene våre.</div>;
 }
